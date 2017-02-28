@@ -1,0 +1,801 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim lib_BENCH.bench_filter
+# vsim lib_BENCH.bench_filter 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.math_real(body)
+# Loading modelsim_lib.util(body)
+# Loading work.bench_filter(arch)#1
+# Loading lib_vhdl.filter(a)#1
+# Loading lib_vhdl.rom(a)#1
+# Loading lib_vhdl.delay_line(a)#1
+# Loading lib_vhdl.mult(a)#1
+# Loading lib_vhdl.accu(a)#1
+# Loading lib_vhdl.buff(a)#1
+# Loading lib_vhdl.fsm(a)#1
+# Loading lib_vhdl.shift_register(a)#1
+add wave sim:/bench_filter/*
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+run
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+restart
+add wave -position insertpoint  \
+sim:/bench_filter/DUT/U6/current_state
+add wave -position insertpoint  \
+sim:/bench_filter/DUT/U6/next_state
+add wave -position insertpoint  \
+sim:/bench_filter/DUT/U6/count
+add wave -position insertpoint  \
+sim:/bench_filter/DUT/U6/count_next
+restart
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.500000e+04 -9.790000e-03
+#    Time: 181450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.750000e+04 -9.685000e-03
+#    Time: 272170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.875000e+04 -9.580000e-03
+#    Time: 362890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.375000e+03 -9.475000e-03
+#    Time: 453610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.687500e+03 -9.370000e-03
+#    Time: 544330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.343750e+03 -9.265000e-03
+#    Time: 635050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.171875e+03 -9.160000e-03
+#    Time: 725770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.859375e+02 -9.055000e-03
+#    Time: 816490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.929688e+02 -8.950000e-03
+#    Time: 907210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.464844e+02 -8.845000e-03
+#    Time: 997930 ns  Iteration: 2  Instance: /bench_filter
+restart
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.500000e+04 -9.790000e-03
+#    Time: 181450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.750000e+04 -9.685000e-03
+#    Time: 272170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.875000e+04 -9.580000e-03
+#    Time: 362890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.375000e+03 -9.475000e-03
+#    Time: 453610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.687500e+03 -9.370000e-03
+#    Time: 544330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.343750e+03 -9.265000e-03
+#    Time: 635050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.171875e+03 -9.160000e-03
+#    Time: 725770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.859375e+02 -9.055000e-03
+#    Time: 816490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.929688e+02 -8.950000e-03
+#    Time: 907210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.464844e+02 -8.845000e-03
+#    Time: 997930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.324219e+01 -8.740000e-03
+#    Time: 1088650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.662109e+01 -8.635000e-03
+#    Time: 1179370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.831055e+01 -8.530000e-03
+#    Time: 1270090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.155273e+00 -8.425000e-03
+#    Time: 1360810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.577637e+00 -8.320000e-03
+#    Time: 1451530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.288818e+00 -8.215000e-03
+#    Time: 1542250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.144409e+00 -8.110000e-03
+#    Time: 1632970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.722046e-01 -8.005000e-03
+#    Time: 1723690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.861023e-01 -7.900000e-03
+#    Time: 1814410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.430511e-01 -7.795000e-03
+#    Time: 1905130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.152557e-02 -7.690000e-03
+#    Time: 1995850 ns  Iteration: 2  Instance: /bench_filter
+restart
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.500000e+04 -9.790000e-03
+#    Time: 181450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.750000e+04 -9.685000e-03
+#    Time: 272170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.875000e+04 -9.580000e-03
+#    Time: 362890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.375000e+03 -9.475000e-03
+#    Time: 453610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.687500e+03 -9.370000e-03
+#    Time: 544330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.343750e+03 -9.265000e-03
+#    Time: 635050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.171875e+03 -9.160000e-03
+#    Time: 725770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.859375e+02 -9.055000e-03
+#    Time: 816490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.929688e+02 -8.950000e-03
+#    Time: 907210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.464844e+02 -8.845000e-03
+#    Time: 997930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.324219e+01 -8.740000e-03
+#    Time: 1088650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.662109e+01 -8.635000e-03
+#    Time: 1179370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.831055e+01 -8.530000e-03
+#    Time: 1270090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.155273e+00 -8.425000e-03
+#    Time: 1360810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.577637e+00 -8.320000e-03
+#    Time: 1451530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.288818e+00 -8.215000e-03
+#    Time: 1542250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.144409e+00 -8.110000e-03
+#    Time: 1632970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.722046e-01 -8.005000e-03
+#    Time: 1723690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.861023e-01 -7.900000e-03
+#    Time: 1814410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.430511e-01 -7.795000e-03
+#    Time: 1905130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.152557e-02 -7.690000e-03
+#    Time: 1995850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.576279e-02 -7.585000e-03
+#    Time: 2086570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.788139e-02 -7.480000e-03
+#    Time: 2177290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.940697e-03 -7.375000e-03
+#    Time: 2268010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.470348e-03 -7.270000e-03
+#    Time: 2358730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.235174e-03 -7.165000e-03
+#    Time: 2449450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.117587e-03 -7.060000e-03
+#    Time: 2540170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.587935e-04 -6.955000e-03
+#    Time: 2630890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.793968e-04 -6.850000e-03
+#    Time: 2721610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.396984e-04 -6.745000e-03
+#    Time: 2812330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.984919e-05 -6.640000e-03
+#    Time: 2903050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.492460e-05 -6.535000e-03
+#    Time: 2993770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.746230e-05 -6.430000e-03
+#    Time: 3084490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.731149e-06 -6.325000e-03
+#    Time: 3175210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.365575e-06 -6.220000e-03
+#    Time: 3265930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.182787e-06 -6.115000e-03
+#    Time: 3356650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.091394e-06 -6.010000e-03
+#    Time: 3447370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.456968e-07 -5.905000e-03
+#    Time: 3538090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.728484e-07 -5.800000e-03
+#    Time: 3628810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.364242e-07 -5.695000e-03
+#    Time: 3719530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.821210e-08 -5.590000e-03
+#    Time: 3810250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.410605e-08 -5.485000e-03
+#    Time: 3900970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.705303e-08 -5.380000e-03
+#    Time: 3991690 ns  Iteration: 2  Instance: /bench_filter
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.500000e+04 -9.790000e-03
+#    Time: 181450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.750000e+04 -9.685000e-03
+#    Time: 272170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.875000e+04 -9.580000e-03
+#    Time: 362890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.375000e+03 -9.475000e-03
+#    Time: 453610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.687500e+03 -9.370000e-03
+#    Time: 544330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.343750e+03 -9.265000e-03
+#    Time: 635050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.171875e+03 -9.160000e-03
+#    Time: 725770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.859375e+02 -9.055000e-03
+#    Time: 816490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.929688e+02 -8.950000e-03
+#    Time: 907210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.464844e+02 -8.845000e-03
+#    Time: 997930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.324219e+01 -8.740000e-03
+#    Time: 1088650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.662109e+01 -8.635000e-03
+#    Time: 1179370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.831055e+01 -8.530000e-03
+#    Time: 1270090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.155273e+00 -8.425000e-03
+#    Time: 1360810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.577637e+00 -8.320000e-03
+#    Time: 1451530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.288818e+00 -8.215000e-03
+#    Time: 1542250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.144409e+00 -8.110000e-03
+#    Time: 1632970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.722046e-01 -8.005000e-03
+#    Time: 1723690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.861023e-01 -7.900000e-03
+#    Time: 1814410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.430511e-01 -7.795000e-03
+#    Time: 1905130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.152557e-02 -7.690000e-03
+#    Time: 1995850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.576279e-02 -7.585000e-03
+#    Time: 2086570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.788139e-02 -7.480000e-03
+#    Time: 2177290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.940697e-03 -7.375000e-03
+#    Time: 2268010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.470348e-03 -7.270000e-03
+#    Time: 2358730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.235174e-03 -7.165000e-03
+#    Time: 2449450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.117587e-03 -7.060000e-03
+#    Time: 2540170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.587935e-04 -6.955000e-03
+#    Time: 2630890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.793968e-04 -6.850000e-03
+#    Time: 2721610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.396984e-04 -6.745000e-03
+#    Time: 2812330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.984919e-05 -6.640000e-03
+#    Time: 2903050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.492460e-05 -6.535000e-03
+#    Time: 2993770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.746230e-05 -6.430000e-03
+#    Time: 3084490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.731149e-06 -6.325000e-03
+#    Time: 3175210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.365575e-06 -6.220000e-03
+#    Time: 3265930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.182787e-06 -6.115000e-03
+#    Time: 3356650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.091394e-06 -6.010000e-03
+#    Time: 3447370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.456968e-07 -5.905000e-03
+#    Time: 3538090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.728484e-07 -5.800000e-03
+#    Time: 3628810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.364242e-07 -5.695000e-03
+#    Time: 3719530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.821210e-08 -5.590000e-03
+#    Time: 3810250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.410605e-08 -5.485000e-03
+#    Time: 3900970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.705303e-08 -5.380000e-03
+#    Time: 3991690 ns  Iteration: 2  Instance: /bench_filter
+restart
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Accu_out' onto '/bench_filter/accu_out'.
+# ** Note: init_signal_spy [bench_read_write.vhd] : Mirroring the value of '/bench_filter/DUT/Buff_OE' onto '/bench_filter/buff_OE'.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U6
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /bench_filter/DUT/U1
+# ** Note:   >>>>>>>>>>>1.500000e+05 -9.895000e-03
+#    Time: 90730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.500000e+04 -9.790000e-03
+#    Time: 181450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.750000e+04 -9.685000e-03
+#    Time: 272170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.875000e+04 -9.580000e-03
+#    Time: 362890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.375000e+03 -9.475000e-03
+#    Time: 453610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.687500e+03 -9.370000e-03
+#    Time: 544330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.343750e+03 -9.265000e-03
+#    Time: 635050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.171875e+03 -9.160000e-03
+#    Time: 725770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.859375e+02 -9.055000e-03
+#    Time: 816490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.929688e+02 -8.950000e-03
+#    Time: 907210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.464844e+02 -8.845000e-03
+#    Time: 997930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.324219e+01 -8.740000e-03
+#    Time: 1088650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.662109e+01 -8.635000e-03
+#    Time: 1179370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.831055e+01 -8.530000e-03
+#    Time: 1270090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.155273e+00 -8.425000e-03
+#    Time: 1360810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.577637e+00 -8.320000e-03
+#    Time: 1451530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.288818e+00 -8.215000e-03
+#    Time: 1542250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.144409e+00 -8.110000e-03
+#    Time: 1632970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.722046e-01 -8.005000e-03
+#    Time: 1723690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.861023e-01 -7.900000e-03
+#    Time: 1814410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.430511e-01 -7.795000e-03
+#    Time: 1905130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.152557e-02 -7.690000e-03
+#    Time: 1995850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.576279e-02 -7.585000e-03
+#    Time: 2086570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.788139e-02 -7.480000e-03
+#    Time: 2177290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.940697e-03 -7.375000e-03
+#    Time: 2268010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.470348e-03 -7.270000e-03
+#    Time: 2358730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.235174e-03 -7.165000e-03
+#    Time: 2449450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.117587e-03 -7.060000e-03
+#    Time: 2540170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.587935e-04 -6.955000e-03
+#    Time: 2630890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.793968e-04 -6.850000e-03
+#    Time: 2721610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.396984e-04 -6.745000e-03
+#    Time: 2812330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.984919e-05 -6.640000e-03
+#    Time: 2903050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.492460e-05 -6.535000e-03
+#    Time: 2993770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.746230e-05 -6.430000e-03
+#    Time: 3084490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.731149e-06 -6.325000e-03
+#    Time: 3175210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.365575e-06 -6.220000e-03
+#    Time: 3265930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.182787e-06 -6.115000e-03
+#    Time: 3356650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.091394e-06 -6.010000e-03
+#    Time: 3447370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.456968e-07 -5.905000e-03
+#    Time: 3538090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.728484e-07 -5.800000e-03
+#    Time: 3628810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.364242e-07 -5.695000e-03
+#    Time: 3719530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.821210e-08 -5.590000e-03
+#    Time: 3810250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.410605e-08 -5.485000e-03
+#    Time: 3900970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.705303e-08 -5.380000e-03
+#    Time: 3991690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.526513e-09 -5.275000e-03
+#    Time: 4082410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.263256e-09 -5.170000e-03
+#    Time: 4173130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.131628e-09 -5.065000e-03
+#    Time: 4263850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.065814e-09 -4.960000e-03
+#    Time: 4354570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.329071e-10 -4.855000e-03
+#    Time: 4445290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.664535e-10 -4.750000e-03
+#    Time: 4536010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.332268e-10 -4.645000e-03
+#    Time: 4626730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.661338e-11 -4.540000e-03
+#    Time: 4717450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.330669e-11 -4.435000e-03
+#    Time: 4808170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.665335e-11 -4.330000e-03
+#    Time: 4898890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.326673e-12 -4.225000e-03
+#    Time: 4989610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.163336e-12 -4.120000e-03
+#    Time: 5080330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.081668e-12 -4.015000e-03
+#    Time: 5171050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.040834e-12 -3.910000e-03
+#    Time: 5261770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.204170e-13 -3.805000e-03
+#    Time: 5352490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.602085e-13 -3.700000e-03
+#    Time: 5443210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.301043e-13 -3.595000e-03
+#    Time: 5533930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.505213e-14 -3.490000e-03
+#    Time: 5624650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.252607e-14 -3.385000e-03
+#    Time: 5715370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.626303e-14 -3.280000e-03
+#    Time: 5806090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.131516e-15 -3.175000e-03
+#    Time: 5896810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.065758e-15 -3.070000e-03
+#    Time: 5987530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.032879e-15 -2.965000e-03
+#    Time: 6078250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.016440e-15 -2.860000e-03
+#    Time: 6168970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.082198e-16 -2.755000e-03
+#    Time: 6259690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.541099e-16 -2.650000e-03
+#    Time: 6350410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.270549e-16 -2.545000e-03
+#    Time: 6441130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.352747e-17 -2.440000e-03
+#    Time: 6531850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.176374e-17 -2.335000e-03
+#    Time: 6622570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.588187e-17 -2.230000e-03
+#    Time: 6713290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.940934e-18 -2.125000e-03
+#    Time: 6804010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.970467e-18 -2.020000e-03
+#    Time: 6894730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.985233e-18 -1.915000e-03
+#    Time: 6985450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.926167e-19 -1.810000e-03
+#    Time: 7076170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.963084e-19 -1.705000e-03
+#    Time: 7166890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.481542e-19 -1.600000e-03
+#    Time: 7257610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.240771e-19 -1.495000e-03
+#    Time: 7348330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.203855e-20 -1.390000e-03
+#    Time: 7439050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.101927e-20 -1.285000e-03
+#    Time: 7529770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.550964e-20 -1.180000e-03
+#    Time: 7620490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.754818e-21 -1.075000e-03
+#    Time: 7711210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.877409e-21 -9.700000e-04
+#    Time: 7801930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.938705e-21 -8.650000e-04
+#    Time: 7892650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.693523e-22 -7.600000e-04
+#    Time: 7983370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.846761e-22 -6.550000e-04
+#    Time: 8074090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.423381e-22 -5.500000e-04
+#    Time: 8164810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.211690e-22 -4.450000e-04
+#    Time: 8255530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.058452e-23 -3.400000e-04
+#    Time: 8346250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.029226e-23 -2.350000e-04
+#    Time: 8436970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.514613e-23 -1.300000e-04
+#    Time: 8527690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.573065e-24 -2.500000e-05
+#    Time: 8618410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.786532e-24 8.000000e-05
+#    Time: 8709130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.893266e-24 1.850000e-04
+#    Time: 8799850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.466331e-25 2.900000e-04
+#    Time: 8890570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.733165e-25 3.950000e-04
+#    Time: 8981290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.366583e-25 5.000000e-04
+#    Time: 9072010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.183291e-25 6.050000e-04
+#    Time: 9162730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.916457e-26 7.100000e-04
+#    Time: 9253450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.958228e-26 8.150000e-04
+#    Time: 9344170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.479114e-26 9.200000e-04
+#    Time: 9434890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.395571e-27 1.025000e-03
+#    Time: 9525610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.697785e-27 1.130000e-03
+#    Time: 9616330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.848893e-27 1.235000e-03
+#    Time: 9707050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.244464e-28 1.340000e-03
+#    Time: 9797770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.622232e-28 1.445000e-03
+#    Time: 9888490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.311116e-28 1.550000e-03
+#    Time: 9979210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.155558e-28 1.655000e-03
+#    Time: 10069930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.777790e-29 1.760000e-03
+#    Time: 10160650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.888895e-29 1.865000e-03
+#    Time: 10251370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.444447e-29 1.970000e-03
+#    Time: 10342090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.222237e-30 2.075000e-03
+#    Time: 10432810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.611119e-30 2.180000e-03
+#    Time: 10523530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.805559e-30 2.285000e-03
+#    Time: 10614250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.027797e-31 2.390000e-03
+#    Time: 10704970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.513898e-31 2.495000e-03
+#    Time: 10795690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.256949e-31 2.600000e-03
+#    Time: 10886410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.128475e-31 2.705000e-03
+#    Time: 10977130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.642373e-32 2.810000e-03
+#    Time: 11067850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.821186e-32 2.915000e-03
+#    Time: 11158570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.410593e-32 3.020000e-03
+#    Time: 11249290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.052966e-33 3.125000e-03
+#    Time: 11340010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.526483e-33 3.230000e-03
+#    Time: 11430730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.763242e-33 3.335000e-03
+#    Time: 11521450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.816208e-34 3.440000e-03
+#    Time: 11612170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.408104e-34 3.545000e-03
+#    Time: 11702890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.204052e-34 3.650000e-03
+#    Time: 11793610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.102026e-34 3.755000e-03
+#    Time: 11884330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.510130e-35 3.860000e-03
+#    Time: 11975050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.755065e-35 3.965000e-03
+#    Time: 12065770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.377532e-35 4.070000e-03
+#    Time: 12156490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.887662e-36 4.175000e-03
+#    Time: 12247210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.443831e-36 4.280000e-03
+#    Time: 12337930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.721916e-36 4.385000e-03
+#    Time: 12428650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.609578e-37 4.490000e-03
+#    Time: 12519370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.304789e-37 4.595000e-03
+#    Time: 12610090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.152394e-37 4.700000e-03
+#    Time: 12700810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.076197e-37 4.805000e-03
+#    Time: 12791530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.380986e-38 4.910000e-03
+#    Time: 12882250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.690493e-38 5.015000e-03
+#    Time: 12972970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.345247e-38 5.120000e-03
+#    Time: 13063690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.726233e-39 5.225000e-03
+#    Time: 13154410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.363116e-39 5.330000e-03
+#    Time: 13245130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.681558e-39 5.435000e-03
+#    Time: 13335850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.407791e-40 5.540000e-03
+#    Time: 13426570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.203895e-40 5.645000e-03
+#    Time: 13517290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.101948e-40 5.750000e-03
+#    Time: 13608010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.050974e-40 5.855000e-03
+#    Time: 13698730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.254869e-41 5.960000e-03
+#    Time: 13789450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.627435e-41 6.065000e-03
+#    Time: 13880170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.313717e-41 6.170000e-03
+#    Time: 13970890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.568587e-42 6.275000e-03
+#    Time: 14061610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.284293e-42 6.380000e-03
+#    Time: 14152330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.642147e-42 6.485000e-03
+#    Time: 14243050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.210733e-43 6.590000e-03
+#    Time: 14333770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.105367e-43 6.695000e-03
+#    Time: 14424490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.052683e-43 6.800000e-03
+#    Time: 14515210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.026342e-43 6.905000e-03
+#    Time: 14605930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.131708e-44 7.010000e-03
+#    Time: 14696650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.565854e-44 7.115000e-03
+#    Time: 14787370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.282927e-44 7.220000e-03
+#    Time: 14878090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.414635e-45 7.325000e-03
+#    Time: 14968810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.207318e-45 7.430000e-03
+#    Time: 15059530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.603659e-45 7.535000e-03
+#    Time: 15150250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>8.018294e-46 7.640000e-03
+#    Time: 15240970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.009147e-46 7.745000e-03
+#    Time: 15331690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.004574e-46 7.850000e-03
+#    Time: 15422410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.002287e-46 7.955000e-03
+#    Time: 15513130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.011434e-47 8.060000e-03
+#    Time: 15603850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.505717e-47 8.165000e-03
+#    Time: 15694570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.252858e-47 8.270000e-03
+#    Time: 15785290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.264292e-48 8.375000e-03
+#    Time: 15876010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.132146e-48 8.480000e-03
+#    Time: 15966730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.566073e-48 8.585000e-03
+#    Time: 16057450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.830365e-49 8.690000e-03
+#    Time: 16148170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.915183e-49 8.795000e-03
+#    Time: 16238890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.957591e-49 8.900000e-03
+#    Time: 16329610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.787957e-50 9.005000e-03
+#    Time: 16420330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.893978e-50 9.110000e-03
+#    Time: 16511050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.446989e-50 9.215000e-03
+#    Time: 16601770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.223495e-50 9.320000e-03
+#    Time: 16692490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>6.117473e-51 9.425000e-03
+#    Time: 16783210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.058736e-51 9.530000e-03
+#    Time: 16873930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.529368e-51 9.635000e-03
+#    Time: 16964650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.646841e-52 9.740000e-03
+#    Time: 17055370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.823421e-52 9.845000e-03
+#    Time: 17146090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.911710e-52 9.950000e-03
+#    Time: 17236810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.558551e-53 1.005500e-02
+#    Time: 17327530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.779276e-53 1.016000e-02
+#    Time: 17418250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.389638e-53 1.026500e-02
+#    Time: 17508970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.194819e-53 1.037000e-02
+#    Time: 17599690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.974095e-54 1.047500e-02
+#    Time: 17690410 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.987047e-54 1.058000e-02
+#    Time: 17781130 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.493524e-54 1.068500e-02
+#    Time: 17871850 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.467618e-55 1.079000e-02
+#    Time: 17962570 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.733809e-55 1.089500e-02
+#    Time: 18053290 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.866905e-55 1.100000e-02
+#    Time: 18144010 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.334523e-56 1.110500e-02
+#    Time: 18234730 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.667261e-56 1.121000e-02
+#    Time: 18325450 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.333631e-56 1.131500e-02
+#    Time: 18416170 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.166815e-56 1.142000e-02
+#    Time: 18506890 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.834077e-57 1.152500e-02
+#    Time: 18597610 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.917038e-57 1.163000e-02
+#    Time: 18688330 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.458519e-57 1.173500e-02
+#    Time: 18779050 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.292596e-58 1.184000e-02
+#    Time: 18869770 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.646298e-58 1.194500e-02
+#    Time: 18960490 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.823149e-58 1.205000e-02
+#    Time: 19051210 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>9.115745e-59 1.215500e-02
+#    Time: 19141930 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>4.557873e-59 1.226000e-02
+#    Time: 19232650 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.278936e-59 1.236500e-02
+#    Time: 19323370 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.139468e-59 1.247000e-02
+#    Time: 19414090 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>5.697341e-60 1.257500e-02
+#    Time: 19504810 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>2.848670e-60 1.268000e-02
+#    Time: 19595530 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.424335e-60 1.278500e-02
+#    Time: 19686250 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>7.121676e-61 1.289000e-02
+#    Time: 19776970 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>3.560838e-61 1.299500e-02
+#    Time: 19867690 ns  Iteration: 2  Instance: /bench_filter
+# ** Note:   >>>>>>>>>>>1.780419e-61 1.310000e-02
+#    Time: 19958410 ns  Iteration: 2  Instance: /bench_filter
+# Window cannot be closed because the modal window " " is still open.
+# Window cannot be closed because the modal window " " is still open.
+# Window cannot be closed because the modal window " " is still open.
